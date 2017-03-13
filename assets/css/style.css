@@ -4,7 +4,12 @@ body {
 }
 
 #selectable img {
-	height: 300px;
-	width: 200px;
+	height: 250px;
+	width: 175px;
 	border-radius: 15px;
+}
+
+.combatant {
+	height: 350px;
+	border-radius: 150px;
 }
