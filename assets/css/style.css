@@ -1,0 +1,10 @@
+body {
+	background-image: url(../images/xmnatt01.jpg);
+	background-repeat: no-repeat;
+}
+
+#selectable img {
+	height: 300px;
+	width: 200px;
+	border-radius: 15px;
+}

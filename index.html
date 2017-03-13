@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>X-men RPG</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="co-md-4">
+				<img src="assets/images/X-men_logo.png" alt="X-men logo" id="logo">
+			</div>
+			<div class="col-md-8">
+				<div class="row" id="selectable">
+					<div class="col-xs-3 allChar" id="logan">
+						<img src="assets/images/wolverine.jpg">
+					</div>
+					<div class="col-xs-3 allChar" id="gambit">
+						<img src="assets/images/gambit.jpg">
+					</div>
+					<div class="col-xs-3 allChar" id="magneto">
+						<img src="assets/images/magneto.jpg">
+					</div>
+					<div class="col-xs-3 allChar" id="daken">
+						<img src="assets/images/daken.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-5 hero-image" id="hero"></div>
+			<div class="col-xs-2">
+				<button class="button btn-danger" id="attack-btn">ATTACK!</button>
+				<div class="col-xs-5 foe-img" id="foe"></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-5 health" id="hero-hp"></div>
+				<div class="col-xs-2">
+					<button type="button" class="btn btn-info" id="reset-btn">RESET </button> 
+				</div>
+				<div class="col-xs-5 health" id="foe-hp"></div>
+			</div>
+		</div>
+	</div>
+</body>
+
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
