@@ -54,7 +54,12 @@ $("#attack-btn").on("click", function(){
 	$("#foe-hp").find("h3").text(characters[charName2].hp);
 	$("#hero-hp").find("h3").text(characters[charName1].hp);
 	if (characters[charName1].hp <= 0) {
-
+		alert("you have succumbed to your wounds!");
+	}
+	else if (characters[charName2].hp <= 0){		 
+		$(".combatant2").css("display", "none");
+		alert("please select another opponent");
+		nemesisSelected = false;
 	}
 })
 
