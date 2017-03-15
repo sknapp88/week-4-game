@@ -9,7 +9,13 @@ body {
 	border-radius: 15px;
 }
 
-.combatant {
+.combatant1, .combatant2 {
 	height: 350px;
 	border-radius: 150px;
+}
+
+h3 {
+	background-color: #b42b13;
+	padding-left: : 60px;
+	border-radius: 10px;
 }
