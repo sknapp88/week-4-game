@@ -47,13 +47,15 @@ $(".allChar").on("click", function(){
 })
 
 $("#attack-btn").on("click", function(){
-	// if (charName1 >= 0 && charName2 >= 0){
 	var charName1 = $("#hero-hp").attr("name");
 	var charName2 = $("#foe-hp").attr("name");
-	$(characters[charName1]).attr("hp", )
-	// $("#foe-hp").find("h3").text(health2 - characters[charName1].attack);
-	// $("#hero-hp").find("h3").text(health1 - characters[charName2].attack);
-	// }
+	characters[charName1].hp -= characters[charName2].attack;
+	characters[charName2].hp -= characters[charName1].attack;
+	$("#foe-hp").find("h3").text(characters[charName2].hp);
+	$("#hero-hp").find("h3").text(characters[charName1].hp);
+	if (characters[charName1].hp <= 0) {
+
+	}
 })
 
 
