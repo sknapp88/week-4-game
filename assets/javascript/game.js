@@ -9,9 +9,6 @@ var characters = {
 	daken: {name: "daken",	hp: 100, attack: 15, counter: 10,}
 }
 
-function setup(){
-
-}
 
 $(".allChar").on("click", function(){
 	var imgSrc = $(this).find('img').attr("src");
@@ -53,6 +50,7 @@ $("#attack-btn").on("click", function(){
 	characters[charName2].hp -= characters[charName1].attack;
 	$("#foe-hp").find("h3").text(characters[charName2].hp);
 	$("#hero-hp").find("h3").text(characters[charName1].hp);
+	characters[charName1].attack += characters[charName1].attack;
 	if (characters[charName1].hp <= 0) {
 		alert("you have succumbed to your wounds!");
 	}
@@ -62,50 +60,13 @@ $("#attack-btn").on("click", function(){
 		nemesisSelected = false;
 	}
 })
+$(document).ready(function(){
+	$("#reset-btn").on("click", function() {
+		window.location.reload(true);
+	});
+})
 
 
-	// $(".allChar").on("click", function(){
-	// 	var chosenFoe = $("<div>");
-	// 	$(chosenFoe).addClass("combatant");
-	// 	console.log(chosenFoe);
-	// 	$(chosenFoe).html("<img " + $(this).attr("src") + " />");
-	// 	$("#foe").append(chosenFoe);
-	// })
 
-// function setup(){
-// 	$('.allChar').click(function(e) {
-// 		console.log("champion = " + $(this).name);
-// 		switch(state) {
-// 		    case "iCanHazHero":
-// 		    	console.log(this.id);
-// 				selectHero(this);
-// 				state = "iCanHazFoe";
-// 		        break;
-// 		    case "iCanHazFoe":
-// 		        selectFoe(this);
-// 		        state = "timeToFight";
-// 		        break;
-// 		} 
-// 	});
-// }
-
-// $(".allChar").click(function() {
-// 	if (champion === true) {
-// 		return
-// 	}
-// 	else {
-// 		function selectHero(heroDiv) {
-// 			var heroContainer = $(heroDiv);
-// 			heroContainer.appendTo('#hero');
-// 			heroContainer.removeClass('allChar');
-// 			heroContainer.addClass('hero-img good');
-// 			chosenHero = characters[heroDiv.id];
-// 			$('#hero-hp').html(chosenHero.hp);
-// 			console.log();
-// 		}
-// 	}
-
-// });
-
-setup();
+// setup();
 
